@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div class="container mt-3">
+                <h2>Registro de pacientes</h2>
+                <form action="#">
+                    <div class="mb-3 mt-3">
+                        <label for="paciente">Nombre del paciente:</label>
+                        <input type="text" class="form-control" id="paciente" placeholder="Ingrese el nombre del paciente" name="paciente">
+                    </div>
+                    <div class="mb-3">
+                        <label for="edad">Edad:</label>
+                        <input type="number" class="form-control" id="edad" placeholder="Ingrese la edad del paciente" name="edad">
+                    </div>
+                    <div class="container mt-3">
+                        <label for="tipoConsulta" class="form-label">Tipo de consulta:</label>
+                        <select class="form-select" id="tipoConsulta" name="tipoConsulta">
+                        <option id="general">General</option>
+                        <option id="especialidad">Especialidad</option>
+                        <option id="urgencia">Urgencia</option>
+                        </select>
+                        <br>
+                    </div>
+                    <div class="mb-3">
+                        <label for="numConsultas">Consultas a realizar:</label>
+                        <input type="number" class="form-control" id="numConsultas" placeholder="Consultas requeridas para el paciente" name="numconsultas">
+                    </div>
+                        <button type="button" class="btn btn-primary" onclick="mostrarInformacion()">Calcular precio</button>
+                </form>
+            </div>
+            <script src="js/script.js"></script>
+        </main>
+    </body>
+</html>

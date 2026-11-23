@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div class="container mt-3">
+                <h2>Registro de hotel</h2>
+                <form action="#">
+                    <div class="mb-3 mt-3">
+                        <label for="nombreHuesped">Huesped:</label>
+                        <input type="text" class="form-control" id="nombreHuesped" placeholder="Nombre del huesped" name="nombreHuesped">
+                    </div>
+                    <div class="mb-3">
+                        <label for="numNoches">Noches:</label>
+                        <input type="number" class="form-control" id="numNoches" placeholder="Noches a reservar" name="numNoches">
+                    </div>
+                    <label for="tipoHabitacion" class="form-label">Tipo de habitación:</label>
+                        <select class="form-select" id="tipoHabitacion" name="tipoHabitacion">
+                        <option>Sencilla</option>
+                        <option>Doble</option>
+                        <option>Suite</option>
+                        </select>
+                        <br>
+                    <button type="button" class="btn btn-primary" onclick="mostrarReservacion()">Reservar</button>
+                </form>
+            </div>
+            <script src="js/script.js"></script>
+        </main>
+    </body>
+</html>
